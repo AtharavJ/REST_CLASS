@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Post</title>
+    <!-- <link rel="stylesheet" href=" style.css"> -->
+</head>
+
+<body>
+    <h2>Here is Your Post:</h2>
+    <hr>
+
+    <% if (post) { %> <!-- Check if post is defined -->
+        <p>Post ID: <%= post.id %>
+        </p>
+        <div class="post">
+            <h3 class="user">Username: <%= post.username %>
+            </h3>
+            <h3 class="content">Content: <%= post.content %>
+            </h3>
+        </div>
+        <% } else { %>
+            <p>Error: No post found</p>
+            <% } %>
+
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Post</title>
+    <!-- <link rel="stylesheet" href=" style.css"> -->
+</head>
+
+<body>
+    <h2>Here is Your Post:</h2>
+    <hr>
+    <p>Post ID : <%= post.id %>
+    </p>
+    <div class="post">
+        <h3 class="user">Username: <%= post.username %>
+        </h3>
+        <h3 class="content">Content: <%= post.content %>
+        </h3>
+
+    </div>
+
+
+</body>
+
+</html> -->
